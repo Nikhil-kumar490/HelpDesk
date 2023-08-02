@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta meta name="viewport" content=
+            "width=device-width, user-scalable=no" />
+  <head>
+    <title>C Language Quiz</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>C Language Quiz</h1>
+    <form>
+      <p>1. What is the syntax for a main function in C language?</p>
+      <input type="radio" name="question1" value="A"> int main()<br>
+      <input type="radio" name="question1" value="B"> void main()<br>
+      <input type="radio" name="question1" value="C"> main()<br>
+      <br>
+
+      <p>2. What is the maximum length of an identifier in C language?</p>
+      <input type="radio" name="question2" value="A"> 8 characters<br>
+      <input type="radio" name="question2" value="B"> 31 characters<br>
+      <input type="radio" name="question2" value="C"> Unlimited<br>
+      <br>
+      <p>3. What is the correct syntax for declaring a variable in C?</p>
+      <input type="radio" name="question3" value="A">  var x;<br>
+      <input type="radio" name="question3" value="B"> int x;<br>
+      <input type="radio" name="question3" value="C"> x as int;<br>
+      <br>
+      <p>4. What is the output of following expression? <br>A=5; <br>B=10; <Br> C=A++ + ++B;</Br></p>
+      <input type="radio" name="question4" value="A"> 14<br>
+      <input type="radio" name="question4" value="B">15<br>
+      <input type="radio" name="question4" value="C"> 16<br>
+      <br>
+      <p>5. What is the purpose of the break statement in a switch case?</p>
+      <input type="radio" name="question5" value="A"> to exit the switch case<br>
+      <input type="radio" name="question5" value="B"> to skip to the next case<br>
+      <input type="radio" name="question5" value="C"> to restart the switch case<br>
+      <br>
+      <p>6. What is the difference between a for loop and a while loop in C?</p>
+      <input type="radio" name="question6" value="A"> A for loop is used when the number of iterations is unknown, while a while loop is used when the number of iterations is known.<br>
+      <input type="radio" name="question6" value="B"> A for loop has three parts (initialization, condition, and increment), while a while loop only has a condition.<br>
+      <input type="radio" name="question6" value="C">   A while loop is executed at least once, while a for loop may not be executed at all if its condition is false from the start.<br>
+      <br>
+      <p>7. What is the purpose of the continue statement in a loop?</p>
+      <input type="radio" name="question7" value="A"> to skip to the next iteration of the loop<br>
+      <input type="radio" name="question7" value="B"> to exit the loop<br>
+      <input type="radio" name="question7" value="C">  to restart the loop<br>
+      <br>
+      <p>8. What is the correct syntax for a function in C?</p>
+      <input type="radio" name="question8" value="A"> function name()<br>
+      <input type="radio" name="question8" value="B"> void name()<br>
+      <input type="radio" name="question8" value="C"> void name(void)<br>
+      <br>
+      <p>9. What is the correct syntax for a return statement in a function in C?</p>
+      <input type="radio" name="question9" value="A">return value<br>
+      <input type="radio" name="question9" value="B">  return (value)<br>
+      <input type="radio" name="question9" value="C"> return;<br>
+      <br>
+      <p>10. What is the difference between a variable declaration and a variable definition in C programming?</p>
+      <input type="radio" name="question10" value="A">A variable declaration provides the data type of a variable, while a variable definition assigns a value to the variable.<br>
+      <input type="radio" name="question10" value="B">A variable definition provides the data type of a variable, while a variable declaration assigns a value to the variable.<br>
+      <input type="radio" name="question10" value="C"> There is no difference between a variable declaration and a variable definition in C programming.<br>
+      <br>
+      
+      <input type="button" value="Submit" onclick="checkAnswers()">
+    </form>
+    <br>
+    <p id="result"></p>
+    <script src="script.js"></script>
+  </body>
+</html>
