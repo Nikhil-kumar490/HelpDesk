@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta meta name="viewport" content=
+            "width=device-width, user-scalable=no" />
+    <title>debuggers</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css?v=5" />
+<script src="script.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+    <div class="topnav" id="myTopnav">
+      <a href="#"><img src="img/logo.png" id="imglogo"><div id="heading">Debuggers</div></a>
+        <a href="index.html">C-language</a>
+        <!-- <a href="chem.html">Chemistry</a> -->
+        <a href="data_structure.html" class="active">Data Structure</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars" id="bar" style="background-color: transparent;"></i>
+        </a>
+      </div>
+    <div id="body">
+
+      <h1 id="first">
+        Data Structure<br>
+        <br><hr><br>
+      <h3>
+        1. Write a C program to declare an integer array, print the base address of the array and also find the n<sup>th</sup> terms address.
+    </h3>
+    <img id="image" src="ds/code/1.png"><br>
+    <code>
+      #include&lt;stdio.h&gt;
+      int main(){
+        int mob[18];
+        in i =0;
+        printf("i= ");
+        scanf("%d", &i);
+        printf("Base address = %d\n", mob);
+        printf("%d", mob+(sizeof(int)*i));
+        return 0;
+      }
+    </code>
+
+    <h4>Output:-</h4>
+    <img  id="output" src="ds/output/1.png" >
+<output>
+  i=5
+  Base address = 6684112
+  6684192
+</output>  
+    <br>
+    
+    <h3>
+      2. Write a C program to dynamically allocate memory for an integer array using malloc().
+  </h3>
+  <img id="image" src="ds/code/2.png"><br>
+  <code>
+    #include&lt;stdio.h&gt;
+    #include&lt;stdlib.h&gt;
+    int main(){
+      int *mob,size;
+      printf("Enter size: ");
+      scanf("%d", &size);
+      mob = (int*) malloc(size *sizeof(int));
+      printf("%d", &mob);
+      return 0;
+    }
+  </code>
+  <h4>Output:-</h4>
+  <img  id="output" src="ds/output/2.png" >
+  <output>
+  Enter Size: 2
+  6684184
+  </output>
+  <br>
+  <h3>
+    3. Write a C Program to find the size of each data type in C.
+</h3>
+<img id="image" src="ds/code/3.png"><br>
+<code>
+  #include&lt;stdio.h&gt;
+  int main(){
+    printf("size of char: %d bytes\n", sizeof(char));
+    printf("size of short: %d bytes\n", sizeof(short));
+    printf("size of int: %d bytes\n", sizeof(int));
+    printf("size of long: %d bytes\n", sizeof(long));
+    printf("size of long long: %d bytes\n", sizeof(long long));
+    printf("size of float: %d bytes\n", sizeof(float));
+    printf("size of double: %d bytes\n", sizeof(double));
+    printf("size of long double: %d bytes\n", sizeof(long double));
+    return 0;
+  }
+</code>
+<h4>Output:-</h4>
+<img  id="output" src="ds/output/3.png" >
+<output>
+Size of char: 1 byte
+Size of short: 2 byte
+Size of int: 4 byte
+Size of long: 4 byte
+Size of long long: 8 byte
+Size of float: 4 byte
+Size of double: 8 byte
+Size of long double: 16 byte
+</output>
+<br>
+<h3>
+  4. Write a C program to Implement traversal on static array.
+</h3>
+<img id="image" src="ds/code/4.png"><br>
+<code>
+  #include&lt;stdio.h&gt;
+  int main(){
+    int arr[] = {10,20,30,40,50};
+    int i;
+    printf("Array elements: ");
+    for(i=0; i&lt;5; i++){
+      printf("%d",arr[i]);
+    }
+    printf("\n");
+    return 0;
+  }
+</code>
+<h4>Output:-</h4>
+<img  id="output" src="ds/output/4.png" >
+<output>
+Arrat elements: 10 20 30 40 50
+</output>
+<h3>
+  5. Write a C program for linear searching in an array.
+</h3>
+<img id="image" src="ds/code/5.png"><br>
+<h4>Output:-</h4>
+<img  id="output" src="ds/output/5.png" >
+<h3>
+  6. Write a C program for Binary searching in an array.
+</h3>
+<img id="image" src="ds/code/6.png"><br>
+<h4>Output:-</h4>
+<img  id="output" src="ds/output/6.png" >
+<h3>
+  7. Write a C program to change the decimal number into a binary number..
+</h3>
+<img id="image" src="ds/code/7.png"><br>
+<h4>Output:-</h4>
+<img  id="output" src="ds/output/7.png" >
+<h3>
+  8. Write a C program to show the implementation of stack operation.
+</h3>
+<img id="image" src="ds/code/8.png"><br>
+<h4>Output:-</h4>
+<img  id="output" src="ds/output/8.png" >
+<h3>
+  9. Write a C program to change the binary number into a decimal number.
+</h3>
+<img id="image" src="ds/code/9.png"><br>
+<h4>Output:-</h4>
+<img  id="output" src="ds/output/9.png" >
+<h3>
+  10. Write a C program for implimentation of linked stack.
+</h3>
+<img id="image" src="ds/code/10.png"><br>
+<h4>Output:-</h4>
+<img  id="output" src="ds/output/10.png" >
+<h3>
+  11. Write a C program for implimentation of linked queue.
+</h3>
+<img id="image" src="ds/code/11.png"><br>
+<h4>Output:-</h4>
+<img  id="output" src="ds/output/11.png" >
+<h3>
+  11. Write a C program for implimentation of Tree.
+</h3>
+<img id="image" src="ds/code/12.png"><br>
+<h4>Output:-</h4>
+<img  id="output" src="ds/output/12.png" >
+<br>
+</div>
+ 
+    <div id="footer">
+        
+       <br>
+        <a href="https://wa.me/+919122701848">
+            <i class="fa fa-whatsapp" style="font-size:30px;color:green; background-color: transparent;"></i></a>
+            <i class="fa fa-facebook" style="font-size:30px;color:skyblue; background-color: transparent;">&nbsp;&nbsp;</i>
+        <i class="fa fa-twitter" style="font-size:30px;color:blue; background-color: transparent;"></i>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+</body>
+</html>
